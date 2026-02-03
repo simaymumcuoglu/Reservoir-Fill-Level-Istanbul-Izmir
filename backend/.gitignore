@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+build/
+
+# env and secrets (never commit)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+*.env
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# test
+coverage/
+*.log
+npm-debug.log*

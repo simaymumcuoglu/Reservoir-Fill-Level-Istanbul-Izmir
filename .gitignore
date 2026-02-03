@@ -1,0 +1,18 @@
+# Env and secrets (never commit)
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,20 @@
+# Verdiğin bilgilerle PostgreSQL: port 5431, kullanıcı iz_ist_dam, veritabanı dam_datas
+# Başlatmak: docker-compose up -d
+# Durdurmak: docker-compose down
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: barajlar-db
+    restart: unless-stopped
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_USER: iz_ist_dam
+      POSTGRES_PASSWORD: izmiristanbul@15032!!
+      POSTGRES_DB: dam_datas
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
